@@ -1,4 +1,10 @@
-# Notes pr le c++ car c harr 
+# Notes pr le c++ car c harr  
+
+## Utile  
+
+-> pour compiler : g++ file.cpp -o a.out -Wall -Wextra -Werror  
+
+-> pour executer : ./a.out
   
 ## Les variables  
 >Ce sont des "etiquettes" qu'on met au debut d'une ligne pour dire quel genre de donnée on va stocker dans la ram en bits. on y retrouve plusieurs versions :
