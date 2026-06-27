@@ -1,2 +1,2 @@
 # c--learn
-mon apprentissage du c++ (enfin)
+mon apprentissage du c++ (enfin) ! il etais temps ! hate de commencer !!
