@@ -6,3 +6,16 @@ Cool ! le c++ ;)
 -> pour compiler : `g++ file.cpp -o a.out` 
 
 -> pour executer : `./a.out`  
+
+-> structure classique d'un fichier : 
+
+```
+#include<iostream>
+using namespace std;
+
+int main ()
+{
+    cout<<"Hello World!"<<endl;
+    return 0;
+}
+```

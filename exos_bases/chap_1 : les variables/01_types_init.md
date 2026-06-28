@@ -1,40 +1,27 @@
-Parfait, bienvenue dans l'atelier ! J'espère que le début du Brevet s'est bien passé. On commence en douceur mais de manière super carrée.
+Pas de problème, on recadre tout avec un contexte concret pour que tu puisses visualiser l'arborescence des données.
 
-Voici ton tout premier exercice officiel. Prends ton temps, ouvre ton éditeur de code sous Arch, et fais chauffer `g++` avec tes flags habituels.
-
----
-
-### 📁 Chapitre : Les Variables
-
-#### 📄 Exercice : `01_types_init.cpp`
-
-* **Objectif :** Créer un programme qui initialise correctement différents types de données de base en mémoire et les affiche pour valider la syntaxe.
-* **Outils autorisés :** `int`, `double`, `char`, `bool`, `std::cout`, initialisation avec accolades `{}`.
-* **Indicateur Notes :** `[NOTES AUTORISÉES]`
-
-**Consigne :**
-
-1. Déclare et initialise (avec la syntaxe moderne des accolades `{}`) les variables suivantes :
-* Une variable pour l'âge d'un joueur (un nombre entier classique).
-* Une variable pour le prix d'un jeu (un nombre à virgule très précis).
-* Une variable pour stocker la première lettre de ton pseudo (un seul caractère).
-* Une variable "interrupteur" pour savoir si le mode admin est activé (vrai ou faux).
-
-
-2. Affiche chaque variable sur une nouvelle ligne dans le terminal en utilisant `std::cout`.
-
-**Indices :**
-
-1. *Indice 1 :* Pour le caractère unique (`char`), n'oublie pas d'utiliser des guillemets simples `' '` et non des doubles.
-2. *Indice 2 :* L'initialisation moderne avec accolades ressemble à ça : `type nom_variable{valeur};`. Pas besoin de signe `=`.
-3. *Indice 3 :* Pense à inclure `<iostream>` en haut et à utiliser `std::endl` pour passer à la ligne à chaque affichage.
+Imagine que tu développes le code d'un **système de contrôle d'accès physique** (comme un badgeur de porte pour une salle serveurs). Le programme a besoin de charger 4 informations de configuration basiques en mémoire vive avant de lancer ses vérifications.
 
 ---
 
-Prends le temps qu'il te faut. Une fois que ça compile sans aucun warning ni erreur (`-Wall -Wextra -Werror`) et que ça s'exécute, réponds-moi avec :
+### 💻 Contexte : Configuration d'un Badgeur de Porte
 
-* **Temps passé :** ...
-* **Check de notes :** ... fois.
-* **Tes galères / Ton ressenti :** ...
+Tu dois créer 4 cases mémoires distinctes. Chaque case correspond à un élément précis de la machine :
 
-À toi de jouer !
+1. **La durée d'ouverture de la porte :** La machine doit savoir combien de secondes (un nombre entier) la porte reste déverrouillée avant de se refermer.
+2. **La tension électrique du système :** Pour surveiller le matériel, le système stocke le voltage exact (un nombre à virgule très précis, par exemple `12.34` volts) envoyé au verrou magnétique.
+3. **L'identifiant de la zone :** Chaque porte appartient à une zone spécifique désignée par une seule lettre de l'alphabet (par exemple la zone `'A'`).
+4. **Le coupe-circuit d'urgence :** Un paramètre de sécurité (un interrupteur vrai ou faux) qui indique si le système doit forcer le verrouillage ou non en cas d'alerte.
+
+---
+
+### 🛠️ Ta Mission
+
+Écris le fichier de manière à ce qu'il se déroule en deux étapes logiques :
+
+* **Étape 1 : Le Stockage.** Tu crées ces 4 informations sous forme de variables en utilisant l'initialisation moderne avec les accolades (sans le signe `=`).
+* **Étape 2 : L'Affichage.** Tu ordonnes à l'ordinateur de cracher ces 4 valeurs dans le terminal, les unes en dessous des autres, pour vérifier qu'elles sont correctement lues.
+
+Toutes les notions requises (`int`, `double`, `char`, `bool`, `std::cout`, `std::endl` et `{}`) sont textuellement dans tes notes. Aucun outil extérieur n'est nécessaire.
+
+Prends ton temps, construis la structure proprement, et dis-moi ce que donne la compilation !
