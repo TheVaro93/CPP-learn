@@ -1,2 +1,8 @@
-# CPP-learn
-mon apprentissage du c++ (enfin) ! il etais temps ! hate de commencer !!
+# CPP-learn  
+Cool ! le c++ ;)  
+
+## Notes globales pour tout le domaine  
+
+-> pour compiler : `g++ file.cpp -o a.out` 
+
+-> pour executer : `./a.out`  
