@@ -1,9 +1,11 @@
 # Les variables  
 >Ce sont des "etiquettes" qu'on met au debut d'une ligne pour dire quel genre de donnée on va stocker dans la ram en bits.  
 
-**Les regles** 
--> pour ecrire correctement au compilateur et qu'il comprenne, une variable peut s'ecrire de deux facons :  
+## **Les regles**  
+-> pour ecrire correctement au compilateur et qu'il comprenne, une variable s'ecrit de deux facons :  
 `int niveau = 1;`, qui est la version "classique" et `int niveau{1}`, qui est la nouvelle facon d'ecrire.
+
+## Les types
 
 **La version sans virgule**
 
