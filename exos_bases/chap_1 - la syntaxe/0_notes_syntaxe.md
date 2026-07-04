@@ -3,8 +3,7 @@
 
 ## **Les bases**  
 
--> Les inclusions : quand on code en c++, on utilise `#include<nom>` pour donner acces au compilateur a des outils basiques. par exemple `#include<iostream>`.
-
+-> Les inclusions : quand on code en c++, on utilise `#include<nom>` pour donner acces au compilateur a des outils basiques. par exemple `#include<iostream>`.  
 
 -> Le point virgule : en c++, quand on ajoute une varibale, fonction ou quoi que ce soit, la ligne doit se terminer par un `;`. le point virgule permet d'indiquer que l'instruction/la ligne est terminée. c'est la regle de base, et si on l'oublie le compilateur pense que la ligne suivante/l'instruction suivante est la même, et crash.  
 

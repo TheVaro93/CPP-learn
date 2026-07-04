@@ -3,7 +3,10 @@
 
 ## **Les regles**  
 -> pour ecrire correctement au compilateur et qu'il comprenne, une variable s'ecrit de deux facons :  
-`int niveau = 1;`, qui est la version "classique" et `int niveau{1}`, qui est la nouvelle facon d'ecrire.
+`int niveau = 1;`, qui est la version "classique" et `int niveau{1}`, qui est la nouvelle facon d'ecrire.  
+
+-> duree de vie : ca s'appelle le 'scope'. une variable n'est en vie que dans les accolades ou elle est nee. si on en crée une `{ici}` , des qu'on sort des accolades elle n'est plus disponible : elle est morte. si on essaie de l'appeller en dehors, le compilateur va dire   
+`error: 'ma_variable' was not declared in this scope` ce qui signifie qu'elle n'a pas été déclarée dans les accolades ou on se trouve.  
 
 ## Les types
 
@@ -40,3 +43,4 @@ ex: `string larper_phrase = "mambo mambo omachimi mambo (true larp)";`.  cet exe
 ex: `unsigned int resultat = 4724173561;`  
 
 -> const : elle sert a verrouiller la variable, ce qui permet qu'elle ne puisse plus etre modifiee dans la suite du code. utile pour des valeurs qui ne bougent pas. ex: `const char parenthese = '(';`  
+
