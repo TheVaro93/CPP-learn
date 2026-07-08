@@ -8,7 +8,9 @@
 -> duree de vie : ca s'appelle le 'scope'. une variable n'est en vie que dans les accolades ou elle est nee. si on en crée une `{ici}` , des qu'on sort des accolades elle n'est plus disponible : elle est morte. si on essaie de l'appeller en dehors, le compilateur va dire   
 `error: 'ma_variable' was not declared in this scope` ce qui signifie qu'elle n'a pas été déclarée dans les accolades ou on se trouve.  
 
-## Les types
+## Partie 1
+
+### Les types
 
 **La version sans virgule**
 
@@ -35,7 +37,7 @@ ex: `string larper_phrase = "mambo mambo omachimi mambo (true larp)";`.  cet exe
 
 **Les modificateurs**  
 
-* ce sont des mots cles que l'on rajout en debut de ligne d'une variable juste avant son type pour changer les regles de sa case memoire.  
+* ce sont des mots cles que l'on rajoute en debut de ligne d'une variable juste avant son type pour changer les regles de sa case memoire.  
 
 -> signed : c'est celui ecrit par default si aucun autre n'est precise. il signifie que le nombre entier peut etre positif ou negatif. ex : `signed int vitesse = 2;`
 
@@ -44,3 +46,13 @@ ex: `unsigned int resultat = 4724173561;`
 
 -> const : elle sert a verrouiller la variable, ce qui permet qu'elle ne puisse plus etre modifiee dans la suite du code. utile pour des valeurs qui ne bougent pas. ex: `const char parenthese = '(';`  
 
+## Partie 2  
+
+### Le stockage  
+
+>Dans la premiere partie, on a appris a choisir le type de tiroir. dans cette partie, on va apprendre a utiliser la taille exacte du tirroir pour eviter une saturation de memoire (lag) ou carrement qu'elle deborde (crash). ca va aussi permettre d'apprendre les bases de la securite d'un programme et de la gestion de la memoire.  
+
+**Les outils**  
+
+-> siezeof(...) : c'est un outil qui va servir a savoir la taille d'une variable ou d'un type : on ecrit entre parenthese la cible, et elle nous renvoie un nombre : c'est la taille de la variable ou du type. ce nombre, c'est sa taille en byte (octet).   
+ex `siezeof(monzgeg)` (reponse dans le terminal) `monzgeg = 4` 
