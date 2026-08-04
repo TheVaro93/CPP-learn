@@ -1,4 +1,4 @@
-# Les variables  
+$# Les variables  
 >Ce sont des "etiquettes" qu'on met au debut d'une ligne pour dire quel genre de donnée on va stocker dans la ram en bits.  
 
 ## **Les regles**  
@@ -55,4 +55,4 @@ ex: `unsigned int resultat = 4724173561;`
 **Les outils**  
 
 -> siezeof(...) : c'est un outil qui va servir a savoir la taille d'une variable ou d'un type : on ecrit entre parenthese la cible, et elle nous renvoie un nombre : c'est la taille de la variable ou du type. ce nombre, c'est sa taille en byte (octet).   
-ex `siezeof(monzgeg)` (reponse dans le terminal) `monzgeg = 4` 
+ex `siezeof(monzgeg)` (reponse dans le terminal) `monzgeg = 4` $
