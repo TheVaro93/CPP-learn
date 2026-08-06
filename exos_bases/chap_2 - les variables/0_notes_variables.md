@@ -44,3 +44,10 @@ ex: `unsigned int resultat = 4724173561;`
 
 -> const : elle sert a verrouiller la variable, ce qui permet qu'elle ne puisse plus etre modifiee dans la suite du code. utile pour des valeurs qui ne bougent pas. ex: `const char parenthese = '(';`  
 
+**L'optimisation**  
+
+* Quand on crée une variable, on doit s'assurer de choisir la bonne pour chaque utilisation, et la bonne taille, pour éviter que la ram (memoire vive) de l'ordinateur ne sature (lag) ou ne deborde (le crash).
+
+-> siezeof : cet outil sert a mesurer le nombre de RAM qu'une variable prends. le resultat de cet outil sera un nombre : c'est le nombre d'octet de la variable. ex :  
+```int boites = 6; siezeof(litres)```  
+ car int est toujours egal a 4 octets.
