@@ -3,6 +3,8 @@ Cool ! le c++ ;)
 
 ## Notes globales pour tout le domaine  
 
+-> installer le compilateur : 
+
 -> pour compiler : `g++ file.cpp -o a.out -Wall -Wextra -Werror` 
 
 -> pour executer : `./a.out`  
